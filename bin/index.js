@@ -32,7 +32,7 @@ function getAllBy(key, value) {
 
 function addRecord(data) {
   loddeClient
-    .addRecords({
+    .addRecord({
       body: {
         uuid: uuidv4(),
         ...data,
