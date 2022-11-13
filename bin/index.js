@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { v4 as uuidv4 } from "uuid";
-import lodde from "lodde";
+//import lodde from "lodde";
+
+import lodde from "../../lodde/lib/index.js";
 
 const loddeClient = lodde.init();
 
@@ -22,6 +24,18 @@ function getAllBy(key, value) {
         search: "{" + '"' + key + '": "' + value + '"}',
       },
     })
+    .then((responseData) => {
+      console.log(responseData);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+function getById(id) {
+  // "2c75f19f-ac7a-4c28-9459-8fbb64c8cb00"
+  loddeClient
+    .getById(id)
     .then((responseData) => {
       console.log(responseData);
     })
