@@ -77,12 +77,7 @@ function getById(id) {
 
 function addRecord(data) {
   loddeClient
-    .addRecord({
-      body: {
-        uuid: uuidv4(),
-        ...data,
-      },
-    })
+    .addRecord(data)
     .then((responseData) => {
       console.log(responseData);
     })
