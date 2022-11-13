@@ -101,3 +101,14 @@ function updateRecord(condition, set) {
       console.log(error);
     });
 }
+
+function deleteRecord(condition) {
+  loddeClient
+    .deleteRecord(condition)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
