@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { v4 as uuidv4 } from "uuid";
 import lodde from "lodde";
 
 // import lodde from "../../lodde/lib/index.js";
