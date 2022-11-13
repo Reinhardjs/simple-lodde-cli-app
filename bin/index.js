@@ -52,6 +52,17 @@ function getMaxPrice() {
     });
 }
 
+function getMostRecord(by, value) {
+  loddeClient
+    .getMostRecord(by, value)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
 function getById(id) {
   // "2c75f19f-ac7a-4c28-9459-8fbb64c8cb00"
   loddeClient
