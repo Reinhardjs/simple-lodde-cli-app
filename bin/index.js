@@ -91,9 +91,9 @@ function addRecord(data) {
     });
 }
 
-function updateRecord(condition, newData) {
+function updateRecord(condition, set) {
   loddeClient
-    .updateRecord(condition, newData)
+    .updateRecord(condition, set)
     .then((response) => {
       console.log(response);
     })
