@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { v4 as uuidv4 } from "uuid";
-//import lodde from "lodde";
+import lodde from "lodde";
 
-import lodde from "../../lodde/lib/index.js";
+// import lodde from "../../lodde/lib/index.js";
 
 const loddeClient = lodde.init();
 
@@ -30,6 +30,15 @@ function getAllBy(key, value) {
     .catch((error) => {
       console.log(error);
     });
+}
+
+function getAllByRange(by, from, start) {
+  loddeClient
+    .getAllByRange(by, from, start)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => console.log(error));
 }
 
 function getById(id) {
