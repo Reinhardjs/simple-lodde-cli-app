@@ -90,3 +90,14 @@ function addRecord(data) {
       console.log(error);
     });
 }
+
+function updateRecord(condition, newData) {
+  loddeClient
+    .updateRecord(condition, newData)
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
