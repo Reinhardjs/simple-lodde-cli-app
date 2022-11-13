@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { v4 as uuidv4 } from "uuid";
 import lodde from "lodde";
 
 const loddeClient = lodde.init();
@@ -29,4 +30,18 @@ function getAllBy(key, value) {
     });
 }
 
-getAll();
+function addRecord(data) {
+  loddeClient
+    .addRecords({
+      body: {
+        uuid: uuidv4(),
+        ...data,
+      },
+    })
+    .then((responseData) => {
+      console.log(responseData);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}

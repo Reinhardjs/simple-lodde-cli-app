@@ -13,7 +13,8 @@
     "run": "./bin/index.js"
   },
   "dependencies": {
-    "lodde": "^1.0.2-alpha.2"
+    "lodde": "^1.0.2-alpha.3",
+    "uuid": "^9.0.0"
   },
   "type": "module"
 }
