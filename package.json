@@ -13,7 +13,7 @@
     "run": "./bin/index.js"
   },
   "dependencies": {
-    "lodde": "^1.0.2-alpha.3"
+    "lodde": "^1.0.2-beta"
   },
   "type": "module"
 }
