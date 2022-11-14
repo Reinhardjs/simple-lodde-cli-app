@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const {
+import {
   getAll,
   getAllBy,
   getAllByRange,
@@ -10,4 +10,8 @@ const {
   addRecord,
   updateRecord,
   deleteRecord,
-} = require("./apiCalls");
+} from "./apiCalls.js";
+import chalk from "chalk";
+import boxen from "boxen";
+import translate from "@vitalets/google-translate-api";
+import figlet from "figlet";
