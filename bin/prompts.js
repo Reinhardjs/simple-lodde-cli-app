@@ -56,3 +56,21 @@ export async function promptGetAllByRange() {
 
   getAllByRange(answer.by, answer.from, answer.to);
 }
+
+export async function promptGetMostRecord() {
+  var answer = await inquirer.prompt([
+    {
+      name: "by",
+      message: "Enter by column:",
+      type: "string",
+      suffix: "[komoditas|area_provinsi|area_kota]",
+    },
+    {
+      name: "value",
+      message: "Enter value:",
+      type: "string",
+    },
+  ]);
+
+  getMostRecord(answer.by, answer.value);
+}
