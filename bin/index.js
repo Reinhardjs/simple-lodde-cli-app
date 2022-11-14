@@ -1,16 +1,7 @@
 #!/usr/bin/env node
 
-import {
-  getAll,
-  getAllBy,
-  getAllByRange,
-  getMaxPrice,
-  getMostRecord,
-  getById,
-  addRecord,
-  updateRecord,
-  deleteRecord,
-} from "./apiCalls.js";
+import { getAll } from "./apiCalls.js";
+import { promptGetAllBy } from "./prompts.js";
 import chalk from "chalk";
 import boxen from "boxen";
 import figlet from "figlet";
@@ -46,5 +37,9 @@ if (argv.request == null) {
 } else {
   if (argv.request === "getAll") {
     getAll();
+  }
+
+  if (argv.request === "getAllBy") {
+    promptGetAllBy();
   }
 }
