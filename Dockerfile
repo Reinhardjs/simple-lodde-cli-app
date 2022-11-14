@@ -4,5 +4,5 @@ FROM node:latest
 COPY . /app
 # Update the current working directory to the /app folder
 WORKDIR /app
-# Add your CLI's installation steps here
+# CLI's installation
 RUN npm install && npm link
