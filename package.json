@@ -17,6 +17,5 @@
     "chalk": "^5.1.2",
     "lodde": "^1.0.2-beta",
     "yargs": "^17.6.2"
-  },
-  "type": "module"
+  }
 }
