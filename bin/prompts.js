@@ -86,3 +86,30 @@ export async function promptGetById() {
 
   getById(answer.id);
 }
+
+export async function propmtAddRecord() {
+  var answer = await inquirer.prompt([
+    {
+      name: "komoditas",
+      message: "Enter komoditas value: ",
+    },
+    {
+      name: "area_provinsi",
+      message: "Enter area_provinsi value: ",
+    },
+    {
+      name: "area_kota",
+      message: "Enter area_kota value: ",
+    },
+    {
+      name: "size",
+      message: "Enter size value: ",
+    },
+    {
+      name: "price",
+      message: "Enter price value: ",
+    },
+  ]);
+
+  addRecord(answer);
+}

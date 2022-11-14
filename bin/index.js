@@ -6,6 +6,7 @@ import {
   promptGetAllByRange,
   promptGetById,
   promptGetMostRecord,
+  propmtAddRecord,
 } from "./prompts.js";
 import chalk from "chalk";
 import boxen from "boxen";
@@ -62,5 +63,9 @@ if (argv.request == null) {
 
   if (argv.request === "getById") {
     promptGetById();
+  }
+
+  if (argv.request === "addRecord") {
+    propmtAddRecord();
   }
 }
