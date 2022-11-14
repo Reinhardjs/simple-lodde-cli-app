@@ -4,6 +4,7 @@ import { getAll, getMaxPrice } from "./apiCalls.js";
 import {
   promptGetAllBy,
   promptGetAllByRange,
+  promptGetById,
   promptGetMostRecord,
 } from "./prompts.js";
 import chalk from "chalk";
@@ -57,5 +58,9 @@ if (argv.request == null) {
 
   if (argv.request === "getMostRecord") {
     promptGetMostRecord();
+  }
+
+  if (argv.request === "getById") {
+    promptGetById();
   }
 }

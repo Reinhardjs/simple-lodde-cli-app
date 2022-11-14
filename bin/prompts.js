@@ -74,3 +74,15 @@ export async function promptGetMostRecord() {
 
   getMostRecord(answer.by, answer.value);
 }
+
+export async function promptGetById() {
+  var answer = await inquirer.prompt([
+    {
+      name: "id",
+      message: "Enter id:",
+      type: "string",
+    },
+  ]);
+
+  getById(answer.id);
+}
