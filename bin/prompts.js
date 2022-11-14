@@ -33,3 +33,26 @@ export async function promptGetAllBy() {
 
   getAllBy(allAnswer.key, allAnswer.value);
 }
+
+export async function promptGetAllByRange() {
+  var answer = await inquirer.prompt([
+    {
+      name: "by",
+      message: "Get records in range by column:",
+      type: "string",
+      suffix: "[price|size]",
+    },
+    {
+      name: "from",
+      message: "From value:",
+      type: "string",
+    },
+    {
+      name: "to",
+      message: "To value:",
+      type: "string",
+    },
+  ]);
+
+  getAllByRange(answer.by, answer.from, answer.to);
+}

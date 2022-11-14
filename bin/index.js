@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { getAll } from "./apiCalls.js";
-import { promptGetAllBy } from "./prompts.js";
+import { promptGetAllBy, promptGetAllByRange } from "./prompts.js";
 import chalk from "chalk";
 import boxen from "boxen";
 import figlet from "figlet";
@@ -41,5 +41,9 @@ if (argv.request == null) {
 
   if (argv.request === "getAllBy") {
     promptGetAllBy();
+  }
+
+  if (argv.request === "getAllByRange") {
+    promptGetAllByRange();
   }
 }
