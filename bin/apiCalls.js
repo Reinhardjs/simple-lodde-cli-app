@@ -1,8 +1,8 @@
-const lodde = require("lodde");
+import lodde from "lodde";
 
 const loddeClient = lodde.init();
 
-function getAll() {
+export function getAll() {
   loddeClient
     .getAll()
     .then((responseData) => {
@@ -13,7 +13,7 @@ function getAll() {
     });
 }
 
-function getAllBy(key, value) {
+export function getAllBy(key, value) {
   loddeClient
     .getAllBy({
       parameters: {
@@ -28,7 +28,7 @@ function getAllBy(key, value) {
     });
 }
 
-function getAllByRange(by, from, start) {
+export function getAllByRange(by, from, start) {
   loddeClient
     .getAllByRange(by, from, start)
     .then((response) => {
@@ -37,7 +37,7 @@ function getAllByRange(by, from, start) {
     .catch((error) => console.log(error));
 }
 
-function getMaxPrice() {
+export function getMaxPrice() {
   loddeClient
     .getMaxPrice()
     .then((response) => {
@@ -48,7 +48,7 @@ function getMaxPrice() {
     });
 }
 
-function getMostRecord(by, value) {
+export function getMostRecord(by, value) {
   loddeClient
     .getMostRecord(by, value)
     .then((response) => {
@@ -59,7 +59,7 @@ function getMostRecord(by, value) {
     });
 }
 
-function getById(id) {
+export function getById(id) {
   // "2c75f19f-ac7a-4c28-9459-8fbb64c8cb00"
   loddeClient
     .getById(id)
@@ -71,7 +71,7 @@ function getById(id) {
     });
 }
 
-function addRecord(data) {
+export function addRecord(data) {
   loddeClient
     .addRecord(data)
     .then((responseData) => {
@@ -82,7 +82,7 @@ function addRecord(data) {
     });
 }
 
-function updateRecord(condition, set) {
+export function updateRecord(condition, set) {
   loddeClient
     .updateRecord(condition, set)
     .then((response) => {
@@ -93,7 +93,7 @@ function updateRecord(condition, set) {
     });
 }
 
-function deleteRecord(condition) {
+export function deleteRecord(condition) {
   loddeClient
     .deleteRecord(condition)
     .then((response) => {
@@ -103,15 +103,3 @@ function deleteRecord(condition) {
       console.log(error);
     });
 }
-
-module.exports = {
-  getAll,
-  getAllBy,
-  getAllByRange,
-  getMaxPrice,
-  getMostRecord,
-  getById,
-  addRecord,
-  updateRecord,
-  deleteRecord,
-};
