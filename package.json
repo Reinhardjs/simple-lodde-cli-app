@@ -17,7 +17,7 @@
     "chalk": "^5.1.2",
     "figlet": "^1.5.2",
     "inquirer": "^9.1.4",
-    "lodde": "^1.0.2-beta",
+    "lodde": "^1.0.2-beta.1",
     "yargs": "^17.6.2"
   },
   "type": "module"

@@ -1,5 +1,5 @@
-// import lodde from "lodde";
-import lodde from "../../lodde/lib/index.js";
+import lodde from "lodde";
+// import lodde from "../../lodde/lib/index.js";
 
 const loddeClient = lodde.init();
 
