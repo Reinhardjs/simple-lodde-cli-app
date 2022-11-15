@@ -118,7 +118,7 @@ Run these following commands to install on your system.
 
 1. Install NPM packages
    ```sh
-   npm install
+   npm install && npm link
    ```
 
 2. Continue reading the `Usage` section below on how to use the commands.
