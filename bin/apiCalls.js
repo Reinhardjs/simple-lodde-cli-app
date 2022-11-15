@@ -25,9 +25,9 @@ export function getAllBy(key, value) {
     });
 }
 
-export function getAllByRange(by, from, start) {
+export function getAllByRange(by, from, to) {
   loddeClient
-    .getAllByRange(by, from, start)
+    .getAllByRange(by, from, to)
     .then((response) => {
       console.log(response);
     })
