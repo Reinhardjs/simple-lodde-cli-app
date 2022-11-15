@@ -137,3 +137,22 @@ export async function promptUpdateRecord() {
 
   updateRecord(condition, set);
 }
+
+export async function promptDeleteRecord() {
+  var answer = await inquirer.prompt([
+    {
+      name: "condition",
+      message: "Enter condition in json string: ",
+      suffix: '[example: {"uuid":"<id>", ...}] ',
+    },
+  ]);
+
+  var condition;
+  try {
+    condition = JSON.parse(answer.condition);
+  } catch (error) {
+    console.log("Please enter valid value!");
+  }
+
+  deleteRecord(condition);
+}

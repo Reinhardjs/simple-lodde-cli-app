@@ -2,6 +2,7 @@
 
 import { getAll, getMaxPrice } from "./apiCalls.js";
 import {
+  promptDeleteRecord,
   promptGetAllBy,
   promptGetAllByRange,
   promptGetById,
@@ -72,5 +73,9 @@ if (argv.request == null) {
 
   if (argv.request === "updateRecord") {
     promptUpdateRecord();
+  }
+
+  if (argv.request === "deleteRecord") {
+    promptDeleteRecord();
   }
 }
