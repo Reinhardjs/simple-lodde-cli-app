@@ -9,12 +9,12 @@ function handleResolve(responseData) {
     .then((rate) => {
       if (responseData instanceof Array) {
         const modifiedArray = responseData.map((item) => {
-          item.price = item.price / rate + " USD";
+          item.price = (item.price / rate).toFixed(2) + " USD";
         });
         console.log(modifiedArray);
       }
       if (responseData instanceof Object) {
-        responseData.price = responseData.price / rate + " USD";
+        responseData.price = (responseData.price / rate).toFixed(2) + " USD";
         console.log(responseData);
       }
     })
