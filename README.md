@@ -136,6 +136,11 @@ example command:
 lodde-cli --request getAll
 ```
 
+Video reference on how to use the cli-app:
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=XOSBZO7jktM"><img src="https://img.youtube.com/vi/AHEARo_5pko/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
+
 #### Wrapper functions available
 
 <table>
