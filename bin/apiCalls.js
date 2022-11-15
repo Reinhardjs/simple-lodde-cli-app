@@ -16,11 +16,7 @@ export function getAll() {
 
 export function getAllBy(key, value) {
   loddeClient
-    .getAllBy({
-      parameters: {
-        search: "{" + '"' + key + '": "' + value + '"}',
-      },
-    })
+    .getAllBy(key, value)
     .then((responseData) => {
       console.log(responseData);
     })
