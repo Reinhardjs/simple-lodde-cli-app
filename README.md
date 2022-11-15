@@ -120,6 +120,90 @@ Run these following commands to install on your system.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+`-r` or `--request` Define what wrapper functions want to be called
+
+#### Wrapper functions available
+
+<table>
+<tr>
+  <th>No</th>
+  <th>Function</th>
+  <th>Description</th>
+  <th>Argument Prompt Type / Input's Example</th>
+</tr>
+<tr>
+  <td>1</td>
+  <td>getAll</td>
+  <td>To get all records</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>getAllBy</td>
+  <td>To get all records by column and value</td>
+  <td>
+    strings
+  </td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>getAllByRange</td>
+  <td>To get all records by column in range</td>
+  <td>
+    strings
+  </td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>getMaxPrice</td>
+  <td>To get record with highest price</td>
+  <td>
+    -
+  </td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>getMostRecord</td>
+  <td>To get record with highest size by column value</td>
+  <td>
+    strings
+  </td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>getById</td>
+  <td>To get record with given id</td>
+  <td>
+    string
+  </td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>addRecord</td>
+  <td>To add new record</td>
+  <td>
+    strings
+  </td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>updateRecord</td>
+  <td>To update record by condition</td>
+  <td>
+    condition example ↓ </br>{"uuid": "<id>", ...} </br></br>
+    set example ↓ </br>{"komoditas": "LELE", "size": 77, ...}
+  </td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>deleteRecord</td>
+  <td>To delete record by condition</td>
+  <td>
+    condition example ↓ </br>{"uuid": "<id>", ...} </br>
+  </td>
+</tr>
+</table>
+
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 
