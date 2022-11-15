@@ -1,13 +1,31 @@
 import lodde from "lodde";
+import { getRateFromUSDToIDR } from "./converter.js";
 // import lodde from "../../lodde/lib/index.js";
 
 const loddeClient = lodde.init();
+
+function handleResolve(responseData) {
+  getRateFromUSDToIDR()
+    .then((rate) => {
+      if (responseData instanceof Array) {
+        const modifiedArray = responseData.map((item) => {
+          item.price = item.price / rate + " USD";
+        });
+        console.log(modifiedArray);
+      }
+      if (responseData instanceof Object) {
+        responseData.price = responseData.price / rate + " USD";
+        console.log(responseData);
+      }
+    })
+    .catch((err) => console.log(err));
+}
 
 export function getAll() {
   loddeClient
     .getAll()
     .then((responseData) => {
-      console.log(responseData);
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
@@ -18,7 +36,7 @@ export function getAllBy(key, value) {
   loddeClient
     .getAllBy(key, value)
     .then((responseData) => {
-      console.log(responseData);
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
@@ -28,8 +46,8 @@ export function getAllBy(key, value) {
 export function getAllByRange(by, from, to) {
   loddeClient
     .getAllByRange(by, from, to)
-    .then((response) => {
-      console.log(response);
+    .then((responseData) => {
+      handleResolve(responseData);
     })
     .catch((error) => console.log(error));
 }
@@ -37,8 +55,8 @@ export function getAllByRange(by, from, to) {
 export function getMaxPrice() {
   loddeClient
     .getMaxPrice()
-    .then((response) => {
-      console.log(response);
+    .then((responseData) => {
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
@@ -48,8 +66,8 @@ export function getMaxPrice() {
 export function getMostRecord(by, value) {
   loddeClient
     .getMostRecord(by, value)
-    .then((response) => {
-      console.log(response);
+    .then((responseData) => {
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
@@ -61,7 +79,7 @@ export function getById(id) {
   loddeClient
     .getById(id)
     .then((responseData) => {
-      console.log(responseData);
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
@@ -72,7 +90,7 @@ export function addRecord(data) {
   loddeClient
     .addRecord(data)
     .then((responseData) => {
-      console.log(responseData);
+      handleResolve(responseData);
     })
     .catch((error) => {
       console.log(error);
