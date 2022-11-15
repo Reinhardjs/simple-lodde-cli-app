@@ -2,7 +2,6 @@ import inquirer from "inquirer";
 import {
   getAllBy,
   getAllByRange,
-  getMaxPrice,
   getMostRecord,
   getById,
   addRecord,
@@ -119,7 +118,7 @@ export async function promptUpdateRecord() {
     {
       name: "condition",
       message: "Enter condition in json string: ",
-      suffix: '[example: {"komoditas":"LELE", ...}] ',
+      suffix: '[example: {"uuid":"<id>", ...}] ',
     },
     {
       name: "set",
