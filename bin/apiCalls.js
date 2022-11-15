@@ -89,8 +89,8 @@ export function getById(id) {
 export function addRecord(data) {
   loddeClient
     .addRecord(data)
-    .then((responseData) => {
-      handleResolve(responseData);
+    .then((response) => {
+      console.log(response);
     })
     .catch((error) => {
       console.log(error);
