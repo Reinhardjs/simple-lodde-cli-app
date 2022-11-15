@@ -79,7 +79,7 @@ Learn the documentation bellow for the usage and commands available.
   <a href="https://www.youtube.com/watch?v=AHEARo_5pko"><img src="https://img.youtube.com/vi/AHEARo_5pko/0.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
 
-#### Prerequisites
+### Prerequisites
 
 This project is configured to be able to containerized using docker. 
 
@@ -100,11 +100,11 @@ docker run -t -d <image-name>
 docker exec -it <container-id> bash
 ```
 
-4. Continue reading the usages documentation below.
+4. Continue reading the `Usage` below on how to use the commands.
 
-#### Installation
+### Installation
 
-Although, you can install it on your system. 
+Although, you can install it on your system without dockerize it. 
 
 Run these following commands to install on your system.
 
@@ -113,14 +113,20 @@ Run these following commands to install on your system.
    npm install
    ```
 
-2. Continue reading the usages documentation below.
+2. Continue reading the `Usage` section below on how to use the commands.
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Use `lodde-cli` to run commands
 
-`-r` or `--request` Define what wrapper functions want to be called
+`-r` or `--request` Is command option to define what wrapper functions want to be called
+
+example command:
+```sh
+lodde-cli --request getAll
+```
 
 #### Wrapper functions available
 
