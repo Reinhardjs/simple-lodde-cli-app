@@ -56,8 +56,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<p align="center">
+  <img width="700" src="https://github.com/Reinhardjs/simple-lodde-cli-app/raw/main/images/screenshot.png" alt="cli output"/>
+</p>
 
 This is the simpe CLI-API built with chalk, boxen, figlet and yargs.
 This cli app is using lodde api wrapper library to send http requests.
