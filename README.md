@@ -75,6 +75,10 @@ Learn the documentation bellow for the usage and commands available.
 <!-- GETTING STARTED -->
 ## Getting Started
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=AHEARo_5pko"><img src="https://img.youtube.com/vi/AHEARo_5pko/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
+
 #### Prerequisites
 
 This project is configured to be able to containerized using docker. 
