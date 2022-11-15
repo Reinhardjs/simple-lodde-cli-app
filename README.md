@@ -80,6 +80,13 @@ Learn the documentation bellow for the usage and commands available.
   <a href="https://www.youtube.com/watch?v=AHEARo_5pko"><img src="https://img.youtube.com/vi/AHEARo_5pko/0.jpg" alt="IMAGE ALT TEXT"></a>
 </div>
 
+First of all, clone this repo :
+```sh
+git clone https://github.com/Reinhardjs/simple-lodde-cli-app
+```
+
+then `cd simple-lodde-cli-app`
+
 ### Prerequisites
 
 This project is configured to be able to containerized using docker. 
