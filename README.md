@@ -112,9 +112,9 @@ docker exec -it <container-id> bash
 
 ### Installation
 
-Although, you can install it on your system without dockerize it. 
+Although, you can install it on your local project environment system without dockerize it. 
 
-Run these following commands to install on your system.
+Run these following commands to install local project environment system.
 
 1. Install NPM packages
    ```sh
