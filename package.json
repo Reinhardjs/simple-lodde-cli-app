@@ -10,7 +10,7 @@
   "author": "Reinhard JS (https://reinhardjs.github.io)",
   "license": "Universitas Brawijaya",
   "bin": {
-    "run": "./bin/index.js"
+    "lodde-cli": "./bin/index.js"
   },
   "dependencies": {
     "boxen": "^7.0.0",
