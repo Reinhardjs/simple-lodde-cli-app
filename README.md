@@ -1,19 +1,19 @@
 <a name="readme-top"></a>
 
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
 
   <h2 align="center">Simple Lodde CLI App</h2>
-
+  
+  <!-- PROJECT SHIELDS -->
+  [![Contributors][contributors-shield]][contributors-url]
+  [![Forks][forks-shield]][forks-url]
+  [![Stargazers][stars-shield]][stars-url]
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
+  [![LinkedIn][linkedin-shield]][linkedin-url]
+  
   <p align="center">
     A simple cli-app that implement all the lodde's api wrapper functions!
     <br />
