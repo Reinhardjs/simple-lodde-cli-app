@@ -14,8 +14,8 @@ export async function getRateFromUSDToIDR() {
       resolve(rate);
     };
 
-    request.onerror = () => {
-      reject("Error get rate from USD to IDR");
+    request.onerror = (err) => {
+      reject("Error get rate: " + err);
     };
   });
 }
