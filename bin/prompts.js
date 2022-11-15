@@ -113,3 +113,28 @@ export async function propmtAddRecord() {
 
   addRecord(answer);
 }
+
+export async function promptUpdateRecord() {
+  var answer = await inquirer.prompt([
+    {
+      name: "condition",
+      message: "Enter condition in json string: ",
+      suffix: '[example: {"komoditas":"LELE", ...}] ',
+    },
+    {
+      name: "set",
+      message: "Enter new data in json string: ",
+      suffix: '[example: {"size": 100, ...}] ',
+    },
+  ]);
+
+  var condition, set;
+  try {
+    condition = JSON.parse(answer.condition);
+    set = JSON.parse(answer.set);
+  } catch (error) {
+    console.log("Please enter valid value!");
+  }
+
+  updateRecord(condition, set);
+}

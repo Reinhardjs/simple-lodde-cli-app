@@ -6,6 +6,7 @@ import {
   promptGetAllByRange,
   promptGetById,
   promptGetMostRecord,
+  promptUpdateRecord,
   propmtAddRecord,
 } from "./prompts.js";
 import chalk from "chalk";
@@ -67,5 +68,9 @@ if (argv.request == null) {
 
   if (argv.request === "addRecord") {
     propmtAddRecord();
+  }
+
+  if (argv.request === "updateRecord") {
+    promptUpdateRecord();
   }
 }
